@@ -35,10 +35,10 @@
 	}
 }
 
-$lowerWallThickness= 4;
-$upperWallThickness= 4.2;
-$ceilingThickness= 4.5; //chose arbitrarily
-$ceilingExtentZ = 15;
+$lowerWallThickness= 3;
+$upperWallThickness= 3;
+$ceilingThickness= 3; //chose arbitrarily
+
 
 $femaleThreadOffset= 0.35;
 $lowerMinorDiameter= $lowerThreadE + 2 * $femaleThreadOffset;
@@ -51,8 +51,15 @@ $lowerSealingLedgeWidth = ($lowerMajorDiameter - $lowerMinorDiameter)/2 + 2;
 $upperMinorDiameter = $upperThreadE;
 $upperMajorDiameter = $upperThreadT;
 $upperBoreDiameter= $upperMinorDiameter - 2*$upperWallThickness;
-$upperNippleExtentZ= $upperThreadH;
+//$upperNippleExtentZ= $upperThreadH;
+$upperNippleExtentZ= 21.5; //$upperThreadH;
 
 $upperThreadGuaranteedFullyThreadedExtentZ= ( $upperThreadMinimumRequiredFullTurns + 1 ) * $upperThreadP;
+
+$transitionTaperAngle = 38 * pi()/180;
+
+$ceilingExtentZ = 
+	   ($lowerMajorDiameter - $upperMinorDiameter)/2  *  tan($transitionTaperAngle)
+	+  $ceilingThickness * (1/cos($transitionTaperAngle));
 
 ?>
