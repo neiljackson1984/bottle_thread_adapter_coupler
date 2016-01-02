@@ -35,6 +35,9 @@
 	}
 }
 
+$bottleBoreDiameter = 25.35; //the diameter of the opening in the liquid hand soap bottle, measured with calipers.
+
+
 $lowerWallThickness= 3;
 $upperWallThickness= 3;
 $ceilingThickness= 3; //chose arbitrarily
@@ -45,14 +48,14 @@ $lowerMinorDiameter= $lowerThreadE + 2 * $femaleThreadOffset;
 $lowerMajorDiameter = $lowerThreadT + 2 * $femaleThreadOffset;
 $lowerBarrelDiameter = $lowerMajorDiameter + 2 * $lowerWallThickness;
 $lowerBoreDepth= 9.3; //eyeballed and meaasured
-$lowerSealingLedgeWidth = ($lowerMajorDiameter - $lowerMinorDiameter)/2 + 2;
+$lowerSealingLedgeWidth = ($lowerMajorDiameter - $bottleBoreDiameter)/2 - 0.5 ;//($lowerMajorDiameter - $lowerMinorDiameter)/2 + 2;
 
 
 $upperMinorDiameter = $upperThreadE;
 $upperMajorDiameter = $upperThreadT;
 $upperBoreDiameter= $upperMinorDiameter - 2*$upperWallThickness;
-//$upperNippleExtentZ= $upperThreadH;
-$upperNippleExtentZ= 21.5; //$upperThreadH;
+
+$upperNippleExtentZ= 21.5-3.8; //$upperThreadH;
 
 $upperThreadGuaranteedFullyThreadedExtentZ= ( $upperThreadMinimumRequiredFullTurns + 1 ) * $upperThreadP;
 
@@ -62,4 +65,13 @@ $ceilingExtentZ =
 	   ($lowerMajorDiameter - $upperMinorDiameter)/2  *  tan($transitionTaperAngle)
 	+  $ceilingThickness * (1/cos($transitionTaperAngle));
 
+	
+$gripNubExtentRadial=2.2;
+$gripNubWidth=2.5;
+
+$gripNubBaseFilletRadius=min(0.2,$gripNubExtentRadial/2);
+$gripNubOuterFilletRadius=min($gripNubWidth/2, $gripNubExtentRadial-$gripNubBaseFilletRadius);
+
+$numberOfGripNubs=8;
+	
 ?>
