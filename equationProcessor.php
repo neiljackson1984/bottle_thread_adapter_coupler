@@ -17,6 +17,71 @@ $initialNames = "something" ; //we declare $initalNames here so that array_keys(
 $initialNames = array_keys($GLOBALS);
 }
 
+
+
+
+
+abstract class propContainer implements IteratorAggregate
+{
+	//public $a;
+	//public $b;
+	//public $c;
+	
+	//private function get_c() {return $this->a + $this->b;}
+	
+	public function __get($name)
+	{
+		// if($name=="c"){return $this->a + $this->b;}
+		// else {return null;}
+		return $this->{"get_" . $name}();
+	}
+	
+	public function getIterator()
+	{
+		//$myIterator = new ArrayIterator($this);
+		$myIterator = new ArrayIterator($this);
+		//$myIterator->append(99);
+		// $myIterator->offsetSet("ahoy",99);
+		// $myIterator->offsetSet("c",$this->{"c"});
+		
+		// $methods = (new reflectionClass($this))->getMethods(ReflectionMethod::IS_PRIVATE);
+		//$methods = (new reflectionClass($this))->getMethods();
+		$methods = (new reflectionClass($this))->getMethods(ReflectionMethod::IS_PROTECTED);
+		foreach($methods as $method)
+		{
+			//fwrite(STDERR, "now looking at " . $method->name . "\n");
+			
+			if( preg_match('/^get_(.+)$/', $method->name , $matches)>0 )
+			{
+				$nameOfProperty = $matches[1];
+				//fwrite(STDERR, "found property " . $nameOfProperty . "\n");
+				$myIterator->offsetSet($nameOfProperty,$this->{$nameOfProperty});
+			}
+		};
+		return $myIterator;
+	}
+	
+	public function __construct($x=[])
+	{
+		foreach($x as $key => $value)
+		{
+			$this->{$key} = $value;
+		}
+	}
+}
+
+// $x = new propContainer(["a"=>13,"b"=>14]);
+// $x->gg = 22;
+
+
+// foreach($x as $key=>$value)
+// {
+	// fwrite(STDERR, $key . " => " . $value . "\n");
+// }
+
+
+
+
 //User definitions go here:
 	
 	
@@ -126,6 +191,25 @@ function toSldWorksEquationSyntax($value, $name="")
 			toSldWorksEquationSyntax($value[$key], $prefix . $key);
 		}
 	}
+	elseif( is_object($value) )
+	{
+		toSldWorksEquationSyntax(object_to_array($value), $name);
+	}
+}
+
+//copied from http://stackoverflow.com/questions/4345554/convert-php-object-to-associative-array :
+function object_to_array($data)
+{
+    if (is_array($data) || is_object($data))
+    {
+        $result = array();
+        foreach ($data as $key => $value)
+        {
+            $result[$key] = object_to_array($value);
+        }
+        return $result;
+    }
+    return $data;
 }
 
 ?>
