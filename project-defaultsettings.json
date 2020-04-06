@@ -1,0 +1,381 @@
+{
+  "version": {
+    "applicationName": "MakerBot Print",
+    "versionNumbers": {
+      "print": {
+        "internal": 1010,
+        "external": "1.1"
+      },
+      "mb": {
+        "internal": 2090
+      }
+    },
+    "applicationVersion": "4.7.0.1867"
+  },
+  "project": {
+    "id": "7677b4cb-fe2b-43d5-b1f5-f160bccb247e",
+    "properties": {
+      "_type": "properties"
+    },
+    "rootOccurrences": [
+      {
+        "id": "7ab27ef4-d36d-43e9-bdab-0f6bef7ef1b8",
+        "properties": {
+          "_type": "properties",
+          
+          
+          
+          
+          
+          "baseLayer":                                                          {"value": "raft"            , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "brimsModelOffset":                                                   {"value": 0.00              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "doFixedShellStart":                                                  {"value": true              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "doPurgeEarlyEnd":                                                    {"value": true              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "doSupportUnderBridges":                                              {"value": false             , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "extruderProfiles>0>defaultTemperature":                              {"value": 215               , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "extruderProfiles>0>extrusionProfiles>base_layer_surface>fanSpeed":   {"value": 0.5               , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "extruderProfiles>0>extrusionProfiles>base_layer_surface>feedrate":   {"value": 50                , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "extruderProfiles>0>extrusionProfiles>outlines>fanSpeed":             {"value": 0.95              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "extruderProfiles>0>extrusionProfiles>outlines>feedrate":             {"value": 20                , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "extruderProfiles>0>extrusionProfiles>raft_base>fanSpeed":            {"value": 0.5               , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "extruderProfiles>0>extrusionProfiles>raft_base>feedrate":            {"value": 10                , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "extruderProfiles>0>extrusionProfiles>solid>feedrate":                {"value": 90                , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "extruderProfiles>0>extrusionProfiles>sparse>feedrate":               {"value": 90                , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "extruderProfiles>0>retractDistance":                                 {"value": 0.5               , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "fixedShellStartDirection":                                           {"value": 215               , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "floorSolidThickness":                                                {"value": 0.00              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "floorSurfaceThickness":                                              {"value": 0.8               , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "layerHeight":                                                        {"value": 0.20              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "modelFillProfiles>sparse>density":                                   {"value": 0.10              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "modelFillProfiles>sparse>pattern":                                   {"value": "diamondfill"     , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "modelShellProfiles>extent>numberOfShells":                           {"value": 2                 , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "numberOfBrims":                                                      {"value": 5                 , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "numberOfInternalBrims":                                              {"value": 5                 , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "raftModelShellsSpacing":                                             {"value": 0.19              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "raftModelSpacing":                                                   {"value": 0.26              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "raftProfiles>base>outsetFromModelEdge":                              {"value": 4                 , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "roofSolidThickness":                                                 {"value": 0.00              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "roofSurfaceThickness":                                               {"value": 0.8               , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "supportAngle":                                                       {"value": 68                , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "supportExtraDistance":                                               {"value": 0.5               , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "supportFillProfiles>sparse>density":                                 {"value": 0.20              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "supportModelSpacing":                                                {"value": 0.40              , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "supportType":                                                        {"value": "none"            , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          "travelSpeedXY":                                                      {"value": 150               , "isDefault":false, "isLocked":false, "isReadOnly":false},
+          
+          
+        "extruders": {
+            "isDefault": false,
+            "isLocked": false,
+            "isReadOnly": false,
+            "value": [
+              "mk13"
+            ]
+         },
+         "scale": {
+            "_type": "properties",
+            "factor": {
+              "_type": "properties",
+              "x": {
+                "isDefault": false,
+                "isLocked": false,
+                "isReadOnly": false,
+                "value": 100
+              },
+              "y": {
+                "isDefault": false,
+                "isLocked": false,
+                "isReadOnly": false,
+                "value": 100
+              },
+              "z": {
+                "isDefault": false,
+                "isLocked": false,
+                "isReadOnly": false,
+                "value": 100
+              }
+            }
+          },
+          "materials": {
+            "isDefault": false,
+            "isLocked": false,
+            "isReadOnly": false,
+            "value": [
+              "pla"
+            ]
+          },
+          "rotationLock": {
+                "isDefault":false, 
+                "isLocked":false, 
+                "isReadOnly":false,
+                "value": false              
+            },
+          "info": {
+            "_type": "properties",
+            "units": {
+              "isDefault": false,
+              "isLocked": false,
+              "isReadOnly": true,
+              "value": "MM"
+            },
+            "meshColor": {
+              "_type": "properties",
+              "h": {
+                "isDefault": false,
+                "isLocked": false,
+                "isReadOnly": false,
+                "value": 0
+              },
+              "s": {
+                "isDefault": false,
+                "isLocked": false,
+                "isReadOnly": false,
+                "value": 0
+              },
+              "l": {
+                "isDefault": false,
+                "isLocked": false,
+                "isReadOnly": false,
+                "value": 0.6
+              }
+            },
+            "extruder": {
+              "isDefault": false,
+              "isLocked": false,
+              "isReadOnly": false,
+              "value": "extruderA"
+            }
+          }
+         
+        },
+        "transform": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "children": [],
+        "dependencies": [],
+        "name": "Part1.SLDPRT",
+        "filePath": "U:\\2015-07-27_bottle thread adapter coupler\\Part1.SLDPRT",
+        "fileSize": 939694,
+        "tessellationKey": "C:\\Users\\Admin\\AppData\\Local\\Temp\\tmp-2004vuw67mGa6kYQ\\tmp-2004VugMyEAgc5ya.xml.body.2.stl6bf35293ef48c8096f0b2e47e6f93caf",
+        "extension": "SLDPRT",
+        "loadStatus": "",
+        "material": {
+          "id": "cc4bd2a0-4ff1-446b-a5c7-297fee070065",
+          "properties": {
+            "_type": "properties"
+          },
+          "name": "Default_material",
+          "printerFamily": "unknown",
+          "vendorMaterialId": "importedMaterial",
+          "threeDAppearance": "#c0c0c0",
+          "uiColor": "#ccc"
+        },
+        "occurrenceType": "part",
+        "flags": 3,
+        "instanceCount": 0,
+        "units": "MM",
+        "appTransform": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rootScaling": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "printables": [
+      {
+        "id": "8384f6a2-d419-4ea4-a1dd-50f64844b73a",
+        "properties": {
+          "_type": "properties"
+        },
+        "name": "Printable",
+        "description": "",
+        "occurrence": "7ab27ef4-d36d-43e9-bdab-0f6bef7ef1b8",
+        "transform": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "trays": [
+      {
+        "id": "f99b70da-5f0b-4d7e-8738-54db48024393",
+        "properties": {
+          "_type": "properties"
+        },
+        "name": "1-Part1",
+        "trayBodies": [
+          {
+            "id": "e607684e-314c-4e38-a1fc-3ef2660ee621",
+            "properties": {
+              "_type": "properties"
+            },
+            "printable": "8384f6a2-d419-4ea4-a1dd-50f64844b73a",
+            "occurrence": "7ab27ef4-d36d-43e9-bdab-0f6bef7ef1b8",
+            "transform": [
+              1,
+              0,
+              0,
+              -0.0006890073418617249,
+              0,
+              1,
+              0,
+              -1.341104507446289e-7,
+              0,
+              0,
+              1,
+              3.202451454990126e-19,
+              0,
+              0,
+              0,
+              1
+            ],
+            "rootOccurrenceId": "7ab27ef4-d36d-43e9-bdab-0f6bef7ef1b8",
+            "composeTransform": [
+              1,
+              0,
+              0,
+              -0.0233910009264946,
+              0,
+              1,
+              0,
+              -0.023732999339699745,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "trayDeadZone": {},
+        "printerParameters": {},
+        "pluginParameters": {},
+        "composerGenerated": false
+      }
+    ],
+    "buildEnvelope": {
+      "id": "f2d7eeac-3218-4983-84b1-58c2a52c4484",
+      "properties": {
+        "_type": "properties"
+      },
+      "name": "Replicator 5th Gen",
+      "description": "",
+      "dimensions": {
+        "x": 0.252,
+        "y": 0.19899999999999998,
+        "z": 0.14800000000000002
+      },
+      "shape": "box",
+      "swathWidths": [],
+      "trayArrangement": {
+        "x": -1,
+        "y": -1
+      },
+      "expansionSpacing": {
+        "growthFactor": 0,
+        "absMinimum": 0
+      }
+    },
+    "selectedPrinterId": "23c1:0005:23C100053C70590041F9",
+    "activeTrayId": "f99b70da-5f0b-4d7e-8738-54db48024393",
+    "tessellationMap": {
+      "C:\\Users\\Admin\\AppData\\Local\\Temp\\tmp-2004vuw67mGa6kYQ\\tmp-2004VugMyEAgc5ya.xml.body.2.stl6bf35293ef48c8096f0b2e47e6f93caf": {
+        "id": "e82870ee-ad27-40de-9184-894404e8144e",
+        "properties": {
+          "_type": "properties"
+        },
+        "path": "C:\\Users\\Admin\\AppData\\Local\\Temp\\tmp-6816cEIvqKIlbxp0\\tmp-152323mhllXbGEcT5\\tmp-2004VugMyEAgc5ya.xml.body.2.stl",
+        "name": "Part1.SLDPRT",
+        "extension": "stl",
+        "representations": {
+          "stl": "C:\\Users\\Admin\\AppData\\Local\\Temp\\tmp-6816mOxG7d6HwGBB\\tmp-2004VugMyEAgc5ya.xml.body.2.stl"
+        }
+      }
+    },
+    "gender": {
+      "id": "de9197d0-81d5-4c3b-8f2f-b6d5c59cf50f",
+      "properties": {
+        "_type": "properties"
+      },
+      "vendor": "MakerBot",
+      "model": "Replicator 5th Gen",
+      "name": "Replicator 5th Gen",
+      "buildVolume": {
+        "envelopeSize": {
+          "x": 0.252,
+          "y": 0.19899999999999998,
+          "z": 0.14800000000000002
+        }
+      },
+      "capabilities": {
+        "can_print": true,
+        "can_supply_progress": true,
+        "can_cancel_build": true,
+        "can_cancel_queueing": true
+      }
+    }
+  }
+}

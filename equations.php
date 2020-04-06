@@ -135,9 +135,9 @@ switch($bottleType)
 $upperThread = $threadSpecs["M28SP415"];
 
 
-$lowerWallThickness= 3;
-$upperWallThickness= 3;
-$ceilingThickness= 3; //chose arbitrarily
+$lowerWallThickness= 5;
+$upperWallThickness= 4;
+$ceilingThickness= 5; //chose arbitrarily
 
 
 $femaleThreadOffset= 0.35;
@@ -164,7 +164,7 @@ $ceilingExtentZ =
 
 	
 $gripNubExtentRadial=2.2;
-$gripNubWidth=2.5;
+$gripNubWidth=3.5;
 $gripNubBaseFilletRadius=min(0.2,$gripNubExtentRadial/2);
 $gripNubOuterFilletRadius=min($gripNubWidth/2, $gripNubExtentRadial-$gripNubBaseFilletRadius);
 

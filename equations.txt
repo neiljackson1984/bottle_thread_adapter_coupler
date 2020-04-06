@@ -1,14 +1,14 @@
 "bottleBoreDiameter" = 31.100000000000001
 "bottleType" = "riteAid"
-"ceilingExtentZ" = 8.795563370463128
-"ceilingThickness" = 3.000000000000000
+"ceilingExtentZ" = 11.333599800608287
+"ceilingThickness" = 5.000000000000000
 "femaleThreadOffset" = 0.350000000000000
 "gripNubBaseFilletRadius" = 0.200000000000000
 "gripNubExtentRadial" = 2.200000000000000
-"gripNubOuterFilletRadius" = 1.250000000000000
-"gripNubWidth" = 2.500000000000000
+"gripNubOuterFilletRadius" = 1.750000000000000
+"gripNubWidth" = 3.500000000000000
 "gripNubsMaximumAllowedCircumferentialInterval" = 16.000000000000000
-"lowerBarrelDiameter" = 43.760000000000005
+"lowerBarrelDiameter" = 47.760000000000005
 "lowerBoreDepth" = 9.300000000000001
 "lowerMajorDiameter" = 37.760000000000005
 "lowerMinorDiameter" = 35.370000000000005
@@ -28,8 +28,8 @@
 "lowerThread.r3" = 0.640000000000000
 "lowerThread.s" = 2.360000000000000
 "lowerThread.t" = 37.060000000000002
-"lowerWallThickness" = 3.000000000000000
-"numberOfGripNubs" = 9.000000000000000
+"lowerWallThickness" = 5.000000000000000
+"numberOfGripNubs" = 10.000000000000000
 "threadSpecs.M28SP415.a" = 2.395710741946616
 "threadSpecs.M28SP415.a1" = 45.000000000000000
 "threadSpecs.M28SP415.a2" = 10.000000000000000
@@ -76,7 +76,7 @@
 "threadSpecs.PCF38P4.s" = 2.360000000000000
 "threadSpecs.PCF38P4.t" = 37.060000000000002
 "transitionTaperAngle" = 0.663225115757845
-"upperBoreDiameter" = 18.989999999999998
+"upperBoreDiameter" = 16.989999999999998
 "upperMajorDiameter" = 27.379999999999999
 "upperMinorDiameter" = 24.989999999999998
 "upperNippleExtentZ" = 17.699999999999999
@@ -96,4 +96,4 @@
 "upperThread.s" = 1.170000000000000
 "upperThread.t" = 27.379999999999999
 "upperThreadGuaranteedFullyThreadedExtentZ" = 12.699999999999999
-"upperWallThickness" = 3.000000000000000
+"upperWallThickness" = 4.000000000000000
